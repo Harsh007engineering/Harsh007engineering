@@ -2,7 +2,7 @@
 
 <!-- HEADER WAVE -->
 <a href="https://github.com/Harsh007engineering">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=180&section=header&text=Harsh%20Rathore&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=MongoDB%20%E2%80%A2%20Express.js%20%E2%80%A2%20React.js%20%E2%80%A2%20Node.js&descAlignY=58&descSize=16&descColor=38bdf8" width="100%" alt="Harsh Rathore Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=180&section=header&text=Harsh%20Rathore&fontSize=50&fontColor=ffffff&fontAlignY=36&desc=Full-Stack%20Developer%20%E2%80%A2%20CSE%20%40%20VIT-AP%20%E2%80%A2%20MongoDB%20%E2%80%A2%20Express.js%20%E2%80%A2%20React.js%20%E2%80%A2%20Node.js&descAlignY=58&descSize=13&descColor=38bdf8" width="100%" alt="Harsh Rathore Banner" />
 </a>
 
 <!-- TYPING SVG -->
@@ -90,7 +90,7 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
         <img src="https://img.shields.io/badge/📁%20View%20Repo-1e293b?style=for-the-badge" alt="View Repo" />
       </a>
       &nbsp;
-      <a href="https://linux-learn.vercel.app">
+      <a href="https://linux-learn-xi.vercel.app/">
         <img src="https://img.shields.io/badge/🌐%20Live%20Demo-0EA5E9?style=for-the-badge" alt="Live Demo" />
       </a>
     </td>
@@ -111,7 +111,7 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
         <img src="https://img.shields.io/badge/📁%20View%20Repo-1e293b?style=for-the-badge" alt="View Repo" />
       </a>
       &nbsp;
-      <a href="https://market-intel-ui.vercel.app">
+      <a href="https://market-intel-news-aggregator-007-one.vercel.app/">
         <img src="https://img.shields.io/badge/🌐%20Live%20Demo-0EA5E9?style=for-the-badge" alt="Live Demo" />
       </a>
     </td>
@@ -130,7 +130,7 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
         <img src="https://img.shields.io/badge/📁%20View%20Repo-1e293b?style=for-the-badge" alt="View Repo" />
       </a>
       &nbsp;
-      <a href="https://sih-pragyan-2026.vercel.app">
+      <a href="https://pragyan-sih-2026.vercel.app/">
         <img src="https://img.shields.io/badge/🌐%20Live%20Demo-0EA5E9?style=for-the-badge" alt="Live Demo" />
       </a>
     </td>
