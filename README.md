@@ -2,13 +2,13 @@
 
 <!-- HEADER WAVE -->
 <a href="https://github.com/Harsh007engineering">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1e293b,100:0ea5e9&height=190&section=header&text=Harsh%20Rathore&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Full-Stack%20Engineer%20%E2%80%A2%20FastAPI%20%26%20MERN%20%E2%80%A2%20Problem%20Solver&descAlignY=60&descSize=16&descColor=38bdf8" width="100%" alt="Harsh Rathore Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=180&section=header&text=Harsh%20Rathore&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Full-Stack%20Engineer%20%E2%80%A2%20FastAPI%20and%20MERN%20%E2%80%A2%20Problem%20Solver&descAlignY=58&descSize=16&descColor=38bdf8" width="100%" alt="Harsh Rathore Banner" />
 </a>
 
 <!-- TYPING SVG -->
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=false&width=720&lines=Full-Stack+Engineer+%26+SDE+Intern+%40+Tata+Steel+%E2%9A%A1;Building+scalable+MERN+%26+FastAPI+platforms+%F0%9F%9A%80;Google+Big+Code+Round+Qualifier+%F0%9F%8F%86;Bhavishya+Jyoti+Merit+Scholarship+Awardee+%E2%9C%A8;CS+Undergrad+%40+VIT-AP+University+%F0%9F%8E%93" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=false&width=720&lines=Full-Stack+Engineer+%26+SDE+Intern+%40+Tata+Steel+%E2%9A%A1;Building+scalable+MERN+%26+FastAPI+platforms+%F0%9F%9A%80;Winner+of+MindMaze+Coding+Quiz+%40+Vitaura+%F0%9F%8F%86;Head+of+Internal+Affairs+%40+E-Club+VIT-AP+%F0%9F%A4%9D;CS+Undergrad+%40+VIT-AP+University+%F0%9F%8E%93" alt="Typing SVG" />
   </a>
 </p>
 
@@ -35,24 +35,18 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
 
 - 💼 **Industry Experience:** SDE Intern at **Tata Steel**, where I engineered a real-time manufacturing tracking system using **FastAPI & JavaScript**, reducing dashboard telemetry latency by **~35%** across 8 production zones with persistent SQLite state synchronization.
 - 🚀 **Full-Stack Craft:** Specialized in the **MERN stack**, **FastAPI**, serverless cloud architectures, and responsive interfaces with **Tailwind CSS v4** and **Framer Motion**.
-- 🏆 **Competitive Milestones:** Qualified for the **Google Big Code Round** & Winner of the **MindMaze Technical Coding Quiz (Vitaura 2025)**.
+- 💡 **Technical Competitions:** Winner of the **MindMaze Technical Coding Quiz (Vitaura 2025)**, the annual technical fest of VIT-AP.
 - 👥 **Leadership:** Head of Internal Affairs at the **Entrepreneurship Club, VIT-AP**.
 - 💬 **Ask me about:** React, Node.js, Express, FastAPI, MongoDB, Linux Internals & Data Structures.
 
 ---
 
-### 📊 GitHub Activity & Streak
+### 📊 GitHub Streak
 
 <div align="center">
 
 <a href="https://github.com/Harsh007engineering">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Harsh007engineering&theme=tokyonight&hide_border=true&background=0d1117&ring=38bdf8&fire=38bdf8&currStreakLabel=38bdf8" alt="GitHub Streak" height="170" />
-</a>
-
-<br><br>
-
-<a href="https://github.com/Harsh007engineering">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Harsh007engineering&bg_color=0d1117&color=38bdf8&line=38bdf8&point=ffffff&area=true&hide_border=true" width="100%" alt="Contribution Graph" />
 </a>
 
 </div>
@@ -171,19 +165,6 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
 
 ---
 
-### 🏅 Honors & Key Achievements
-
-| 🏆 Milestone | Details |
-| :--- | :--- |
-| 🥇 **Google Big Code Round** | **Qualified** after clearing competitive algorithmic problem-solving qualifiers |
-| 🎓 **Bhavishya Jyoti Award (2025)** | Awarded **₹20,000 merit scholarship** for 1st-year engineering academic excellence (TCPL) |
-| 💡 **MindMaze Technical Coding Quiz** | **Winner** — Vitaura 2025 (Annual Technical Fest of VIT-AP) |
-| 🏭 **Tata Steel SDE Internship** | Built real-time plant tracking dashboard with **~35% latency reduction** across 8 zones |
-| 🏫 **Class 10th ICSE Board** | Scored **95.0%** at Little Flower School, Jamshedpur |
-| 👥 **Head of Internal Affairs** | Led operations & execution at **Entrepreneurship Club, VIT-AP** |
-
----
-
 ### 🐍 Contribution Activity
 
 <div align="center">
@@ -199,7 +180,7 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
 
 <!-- FOOTER WAVE -->
 <a href="https://github.com/Harsh007engineering">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1e293b,100:0ea5e9&height=90&section=footer" width="100%" alt="Footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=80&section=footer" width="100%" alt="Footer" />
 </a>
 
 </div>
