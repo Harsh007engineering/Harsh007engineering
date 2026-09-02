@@ -2,13 +2,13 @@
 
 <!-- HEADER WAVE -->
 <a href="https://github.com/Harsh007engineering">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=180&section=header&text=Harsh%20Rathore&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Full-Stack%20Engineer%20%E2%80%A2%20FastAPI%20and%20MERN%20%E2%80%A2%20Problem%20Solver&descAlignY=58&descSize=16&descColor=38bdf8" width="100%" alt="Harsh Rathore Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=180&section=header&text=Harsh%20Rathore&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=MongoDB%20%E2%80%A2%20Express.js%20%E2%80%A2%20React.js%20%E2%80%A2%20Node.js&descAlignY=58&descSize=16&descColor=38bdf8" width="100%" alt="Harsh Rathore Banner" />
 </a>
 
 <!-- TYPING SVG -->
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=false&width=720&lines=Full-Stack+Engineer+%26+SDE+Intern+%40+Tata+Steel+%E2%9A%A1;Building+scalable+MERN+%26+FastAPI+platforms+%F0%9F%9A%80;Winner+of+MindMaze+Coding+Quiz+%40+Vitaura+%F0%9F%8F%86;Head+of+Internal+Affairs+%40+E-Club+VIT-AP+%F0%9F%A4%9D;CS+Undergrad+%40+VIT-AP+University+%F0%9F%8E%93" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=false&width=720&lines=Full-Stack+Engineer+%26+SDE+Intern+%40+Tata+Steel+%E2%9A%A1;MongoDB+%E2%80%A2+Express.js+%E2%80%A2+React.js+%E2%80%A2+Node.js+%F0%9F%9A%80;Top+15%2C000+Globally+in+Google+Big+Code+%F0%9F%8F%86;Winner+of+MindMaze+Coding+Quiz+%40+Vitaura+%E2%9C%A8;CS+Undergrad+%40+VIT-AP+University+%F0%9F%8E%93" alt="Typing SVG" />
   </a>
 </p>
 
@@ -34,9 +34,8 @@
 I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passionate about building resilient full-stack applications, real-time data pipelines, and solving complex algorithmic challenges.
 
 - 💼 **Industry Experience:** SDE Intern at **Tata Steel**, where I engineered a real-time manufacturing tracking system using **FastAPI & JavaScript**, reducing dashboard telemetry latency by **~35%** across 8 production zones with persistent SQLite state synchronization.
-- 🚀 **Full-Stack Craft:** Specialized in the **MERN stack**, **FastAPI**, serverless cloud architectures, and responsive interfaces with **Tailwind CSS v4** and **Framer Motion**.
-- 💡 **Technical Competitions:** Winner of the **MindMaze Technical Coding Quiz (Vitaura 2025)**, the annual technical fest of VIT-AP.
-- 👥 **Leadership:** Head of Internal Affairs at the **Entrepreneurship Club, VIT-AP**.
+- 🚀 **Full-Stack Craft:** Specialized in **MongoDB, Express.js, React.js, Node.js (MERN)**, **FastAPI**, serverless cloud architectures, and responsive interfaces with **Tailwind CSS v4** and **Framer Motion**.
+- 💡 **Technical Competitions:** Cleared **Google Big Code qualifier round** and selected among **top 15,000 candidates globally**; Winner of the **MindMaze Technical Coding Quiz (Vitaura 2025)**, the annual technical fest of VIT-AP.
 - 💬 **Ask me about:** React, Node.js, Express, FastAPI, MongoDB, Linux Internals & Data Structures.
 
 ---
@@ -71,6 +70,10 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
       <a href="https://github.com/Harsh007engineering/Campus-Travel-Buddy">
         <img src="https://img.shields.io/badge/📁%20View%20Repo-1e293b?style=for-the-badge" alt="View Repo" />
       </a>
+      &nbsp;
+      <a href="https://campus-travel-buddy-ui.vercel.app">
+        <img src="https://img.shields.io/badge/🌐%20Live%20Demo-0EA5E9?style=for-the-badge" alt="Live Demo" />
+      </a>
     </td>
     <!-- PROJECT 2 -->
     <td width="50%" valign="top">
@@ -85,6 +88,10 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
       </p>
       <a href="https://github.com/Harsh007engineering/LinuxLearn">
         <img src="https://img.shields.io/badge/📁%20View%20Repo-1e293b?style=for-the-badge" alt="View Repo" />
+      </a>
+      &nbsp;
+      <a href="https://linux-learn.vercel.app">
+        <img src="https://img.shields.io/badge/🌐%20Live%20Demo-0EA5E9?style=for-the-badge" alt="Live Demo" />
       </a>
     </td>
   </tr>
@@ -103,6 +110,10 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
       <a href="https://github.com/Harsh007engineering/Market-Intel">
         <img src="https://img.shields.io/badge/📁%20View%20Repo-1e293b?style=for-the-badge" alt="View Repo" />
       </a>
+      &nbsp;
+      <a href="https://market-intel-ui.vercel.app">
+        <img src="https://img.shields.io/badge/🌐%20Live%20Demo-0EA5E9?style=for-the-badge" alt="Live Demo" />
+      </a>
     </td>
     <!-- PROJECT 4 -->
     <td width="50%" valign="top">
@@ -117,6 +128,10 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
       </p>
       <a href="https://github.com/Harsh007engineering/SIH-PRAGYAN-2026">
         <img src="https://img.shields.io/badge/📁%20View%20Repo-1e293b?style=for-the-badge" alt="View Repo" />
+      </a>
+      &nbsp;
+      <a href="https://sih-pragyan-2026.vercel.app">
+        <img src="https://img.shields.io/badge/🌐%20Live%20Demo-0EA5E9?style=for-the-badge" alt="Live Demo" />
       </a>
     </td>
   </tr>
