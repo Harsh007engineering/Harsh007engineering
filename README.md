@@ -8,7 +8,7 @@
 <!-- TYPING SVG -->
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=false&width=720&lines=Full-Stack+Engineer+%26+SDE+Intern+%40+Tata+Steel+%E2%9A%A1;MongoDB+%E2%80%A2+Express.js+%E2%80%A2+React.js+%E2%80%A2+Node.js+%F0%9F%9A%80;Top+15%2C000+Globally+in+Google+Big+Code+%F0%9F%8F%86;Winner+of+MindMaze+Coding+Quiz+%40+Vitaura+%E2%9C%A8;CS+Undergrad+%40+VIT-AP+University+%F0%9F%8E%93" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=false&width=720&lines=Full-Stack+Engineer+%26+SDE+Intern+%40+Tata+Steel+%E2%9A%A1;MongoDB+%E2%80%A2+Express.js+%E2%80%A2+React.js+%E2%80%A2+Node.js+%F0%9F%9A%80;CloudVault+%E2%80%A2+Campus+Travel+Buddy+%E2%80%A2+LinuxLearn+%F0%9F%92%BB;Top+15%2C000+Globally+in+Google+Big+Code+%F0%9F%8F%86;Winner+of+MindMaze+Coding+Quiz+%40+Vitaura+%E2%9C%A8;CS+Undergrad+%40+VIT-AP+University+%F0%9F%8E%93" alt="Typing SVG" />
   </a>
 </p>
 
@@ -32,12 +32,12 @@
 
 ### 👨‍💻 About Me
 
-I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passionate about building resilient full-stack applications, real-time data pipelines, and solving complex algorithmic challenges.
+I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passionate about building resilient full-stack applications, secure cloud storage architectures, real-time data pipelines, and solving complex algorithmic challenges.
 
 - 💼 **Industry Experience:** SDE Intern at **Tata Steel**, where I engineered a real-time manufacturing tracking system using **FastAPI & JavaScript**, reducing dashboard telemetry latency by **~35%** across 8 production zones with persistent SQLite state synchronization.
-- 🚀 **Full-Stack Craft:** Specialized in **MongoDB, Express.js, React.js, Node.js (MERN)**, **FastAPI**, serverless cloud architectures, and responsive interfaces with **Tailwind CSS v4** and **Framer Motion**.
+- 🚀 **Full-Stack Craft:** Specialized in **MongoDB, Express.js, React.js, Node.js (MERN)**, **FastAPI**, **Cloudflare R2 / AWS S3** object storage, serverless cloud architectures, and responsive interfaces with **Tailwind CSS v4** and **Framer Motion**.
 - 💡 **Technical Competitions:** Cleared **Google Big Code qualifier round** and selected among **top 15,000 candidates globally**; Winner of the **MindMaze Technical Coding Quiz (Vitaura 2025)**, the annual technical fest of VIT-AP.
-- 💬 **Ask me about:** React, Node.js, Express, FastAPI, MongoDB, Linux Internals & Data Structures.
+- 💬 **Ask me about:** React, Node.js, Express, FastAPI, MongoDB, Cloud Storage, Linux Internals & Data Structures.
 
 ---
 
@@ -46,7 +46,7 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
 <div align="center">
 
 <a href="https://github.com/Harsh007engineering">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Harsh007engineering&theme=tokyonight&hide_border=true&background=0d1117&ring=38bdf8&fire=38bdf8&currStreakLabel=38bdf8&sideNums=38bdf8&sideLabels=38bdf8" alt="GitHub Streak" height="170" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Harsh007engineering&theme=tokyonight&hide_border=true&background=0d1117&ring=38bdf8&fire=38bdf8&currStreakLabel=38bdf8&sideNums=38bdf8&sideLabels=38bdf8&dates=38bdf8&v=20260915" alt="GitHub Streak" height="170" />
 </a>
 
 </div>
@@ -56,8 +56,43 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
 ### 🚀 Featured Projects
 
 <table>
+  <!-- ROW 1 -->
   <tr>
-    <!-- PROJECT 1 -->
+    <!-- PROJECT 1: CLOUDVAULT -->
+    <td width="50%" valign="top">
+      <h3>🔒 CloudVault</h3>
+      <p><strong>Secure Shared Lab Cloud Storage & File Management Platform</strong></p>
+      <p>Zero-email cloud storage platform engineered for public university labs. Features pure username-password auth, cryptographic single-use recovery codes, public PC cache-control hardening (no-store), pluggable Cloudflare R2 / S3 object storage with 0-egress fees, 500 MiB logical quotas, and admin recovery tools.</p>
+      <p>
+        <img src="https://img.shields.io/badge/React_18-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+        <img src="https://img.shields.io/badge/Vite_6-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node" />
+        <img src="https://img.shields.io/badge/Cloudflare_R2-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="R2" />
+        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
+      </p>
+      <a href="https://github.com/Harsh007engineering/CloudVault">
+        <img src="https://img.shields.io/badge/📁%20View%20Repo-1e293b?style=for-the-badge" alt="View Repo" />
+      </a>
+    </td>
+    <!-- PROJECT 2: NEURO-FUZZY SCREENING -->
+    <td width="50%" valign="top">
+      <h3>🧠 Neuro-Fuzzy Clinical Diagnostic Engine</h3>
+      <p><strong>Hybrid ANN + Fuzzy Logic DASS-21 Mental Health Screening</strong></p>
+      <p>Soft-computing diagnostic platform combining a Multi-Layer Perceptron (ANN) with a Mamdani Fuzzy Inference System (30 clinical rules) and Centroid Defuzzification for Explainable AI (XAI). Achieves 99.11% depression and 98.89% anxiety accuracy with 1.19ms inference latency.</p>
+      <p>
+        <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+        <img src="https://img.shields.io/badge/Python_3.10-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+        <img src="https://img.shields.io/badge/Neural_Networks-FF6F00?style=flat-square" alt="ANN" />
+        <img src="https://img.shields.io/badge/Fuzzy_Logic-4CAF50?style=flat-square" alt="Fuzzy" />
+      </p>
+      <a href="https://github.com/Harsh007engineering/Depression-Anxiety-Screening-using-ANN-Fuzzy-Logic">
+        <img src="https://img.shields.io/badge/📁%20View%20Repo-1e293b?style=for-the-badge" alt="View Repo" />
+      </a>
+    </td>
+  </tr>
+  <!-- ROW 2 -->
+  <tr>
+    <!-- PROJECT 3: CAMPUS TRAVEL BUDDY -->
     <td width="50%" valign="top">
       <h3>🚗 Campus Travel Buddy</h3>
       <p><strong>Full-Stack University Mobility & Carpooling Platform</strong></p>
@@ -76,7 +111,7 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
         <img src="https://img.shields.io/badge/🌐%20Live%20Demo-0EA5E9?style=for-the-badge" alt="Live Demo" />
       </a>
     </td>
-    <!-- PROJECT 2 -->
+    <!-- PROJECT 4: LINUXLEARN -->
     <td width="50%" valign="top">
       <h3>🐧 LinuxLearn</h3>
       <p><strong>Interactive Linux Command Learning Platform</strong></p>
@@ -96,8 +131,9 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
       </a>
     </td>
   </tr>
+  <!-- ROW 3 -->
   <tr>
-    <!-- PROJECT 3 -->
+    <!-- PROJECT 5: MARKET-INTEL -->
     <td width="50%" valign="top">
       <h3>📈 Market-Intel</h3>
       <p><strong>Real-Time Financial News Intelligence Engine</strong></p>
@@ -116,7 +152,7 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
         <img src="https://img.shields.io/badge/🌐%20Live%20Demo-0EA5E9?style=for-the-badge" alt="Live Demo" />
       </a>
     </td>
-    <!-- PROJECT 4 -->
+    <!-- PROJECT 6: SIH-PRAGYAN-2026 -->
     <td width="50%" valign="top">
       <h3>🇮🇳 Pragyan (SIH 2026)</h3>
       <p><strong>National Digital Learning & Assessment Portal</strong></p>
@@ -168,7 +204,7 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
 #### 🗄️ Databases & Cloud
 <p>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=mongodb,postgres,sqlite,vercel" alt="Databases" height="48" />
+    <img src="https://skillicons.dev/icons?i=mongodb,postgres,sqlite,vercel,cloudflare,aws" alt="Databases and Cloud" height="48" />
   </a>
 </p>
 
