@@ -1,26 +1,36 @@
-name: Generate Snake
+name: Generate Snake Animation
 
 on:
   schedule:
-    # Run once every 24 hours
-    - cron: "0 0 * * *"
+    # Run every 6 hours to sync latest commits automatically
+    - cron: "0 */6 * * *"
   workflow_dispatch:
   push:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: Platane/snk@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate Snake SVG
+        uses: Platane/snk@v3
         with:
           github_user_name: Harsh007engineering
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
-      - uses: crazy-max/ghaction-github-pages@v3.1.0
+
+      - name: Deploy Snake SVG to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
