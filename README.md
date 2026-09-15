@@ -46,7 +46,7 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
 <div align="center">
 
 <a href="https://github.com/Harsh007engineering">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Harsh007engineering&theme=tokyonight&hide_border=true&background=0d1117&ring=38bdf8&fire=38bdf8&currStreakLabel=38bdf8&sideNums=38bdf8&sideLabels=38bdf8&dates=38bdf8&v=20260915_2" alt="GitHub Streak" height="170" />
+  <img src="https://raw.githubusercontent.com/Harsh007engineering/Harsh007engineering/output/streak-stats.svg" alt="GitHub Streak" height="170" />
 </a>
 
 </div>

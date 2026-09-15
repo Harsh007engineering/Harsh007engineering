@@ -1,4 +1,4 @@
-name: Generate Snake Animation
+name: Generate Snake Animation & Stats
 
 on:
   schedule:
@@ -29,7 +29,11 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
 
-      - name: Deploy Snake SVG to output branch
+      - name: Fetch and save GitHub Streak Stats SVG
+        run: |
+          curl -s "https://github-readme-streak-stats.herokuapp.com/?user=Harsh007engineering&theme=tokyonight&hide_border=true&background=0d1117&ring=38bdf8&fire=38bdf8&currStreakLabel=38bdf8&sideNums=38bdf8&sideLabels=38bdf8" -o dist/streak-stats.svg
+
+      - name: Deploy SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
