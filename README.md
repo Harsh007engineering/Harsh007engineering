@@ -46,7 +46,7 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
 <div align="center">
 
 <a href="https://github.com/Harsh007engineering">
-  <img src="https://raw.githubusercontent.com/Harsh007engineering/Harsh007engineering/output/streak-stats.svg" alt="GitHub Streak" height="170" />
+  <img src="https://raw.githubusercontent.com/Harsh007engineering/Harsh007engineering/output/streak-stats.svg?v=20260919" alt="GitHub Streak" height="170" />
 </a>
 
 </div>
@@ -226,9 +226,9 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Harsh007engineering/Harsh007engineering/output/github-snake-dark.svg?v=20260916">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Harsh007engineering/Harsh007engineering/output/github-snake.svg?v=20260916">
-  <img alt="github-snake" src="https://raw.githubusercontent.com/Harsh007engineering/Harsh007engineering/output/github-snake-dark.svg?v=20260916">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Harsh007engineering/Harsh007engineering/output/github-snake-dark.svg?v=20260919">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Harsh007engineering/Harsh007engineering/output/github-snake.svg?v=20260919">
+  <img alt="github-snake" src="https://raw.githubusercontent.com/Harsh007engineering/Harsh007engineering/output/github-snake-dark.svg?v=20260919">
 </picture>
 
 <br><br>

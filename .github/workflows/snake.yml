@@ -26,13 +26,9 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Generate High-Speed Aesthetic Snake SVGs
+      - name: Generate High-Speed Aesthetic Snake SVGs & Streak Stats
         run: |
           python .github/scripts/generate_snake.py
-
-      - name: Fetch and save GitHub Streak Stats SVG
-        run: |
-          curl -s "https://github-readme-streak-stats.herokuapp.com/?user=Harsh007engineering&theme=tokyonight&hide_border=true&background=0d1117&ring=38bdf8&fire=38bdf8&currStreakLabel=38bdf8&sideNums=38bdf8&sideLabels=38bdf8" -o dist/streak-stats.svg
 
       - name: Deploy SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0

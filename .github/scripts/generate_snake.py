@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """
-High-Speed Cyber-Arcade Snake Generator for GitHub Profile.
-Creates an appealing, fast-paced snake game animation with a lush, active contribution grid.
-Generates:
-  - dist/github-snake-dark.svg (Dark mode)
-  - dist/github-snake.svg (Light mode)
+Custom Snake Animation & Streak Stats Generator for Harsh's GitHub Profile.
+- Calibrated to exactly 1.5x of Harsh's actual GitHub contribution activity (18 green boxes).
+- Fast arcade slither speed (~32ms per step).
+- Safe streak-stats sync preventing any GitHub API / Heroku error SVGs from being published.
 """
 
 import os
-import random
+import urllib.request
+import re
+import shutil
 
 def build_snake_circuit():
     """
@@ -40,45 +41,63 @@ def build_snake_circuit():
             
     return path
 
-def generate_svg(is_dark=True, duration_ms=7200):
+def get_calibrated_boxes():
+    """
+    Harsh has 12 actual active contribution days on GitHub.
+    User requested: 1.5x the green of normal actual activity = exactly 18 green boxes.
+    Returns:
+      active_boxes: dict mapping (col, row) -> intensity level (1..4)
+    """
+    # 12 Actual Contribution Days (col 0..52, row 0..6)
+    actual_days = [
+        ((29, 2), 1),  # 2026-04-07
+        ((29, 3), 2),  # 2026-04-08
+        ((42, 3), 4),  # 2026-07-08
+        ((50, 0), 1),  # 2026-08-30
+        ((50, 3), 4),  # 2026-09-02
+        ((51, 6), 1),  # 2026-09-12
+        ((52, 0), 4),  # 2026-09-13
+        ((52, 1), 1),  # 2026-09-14
+        ((52, 2), 4),  # 2026-09-15
+        ((52, 3), 2),  # 2026-09-16
+        ((52, 4), 1),  # 2026-09-17
+        ((52, 6), 1),  # 2026-09-19
+    ]
+
+    # 6 Additional naturally-placed boxes to achieve exactly 1.5x (18 total boxes)
+    extra_days = [
+        ((15, 0), 1),  # Early sprint
+        ((22, 2), 2),  # Spring
+        ((35, 5), 2),  # Early summer
+        ((42, 2), 3),  # Mid summer
+        ((48, 4), 2),  # Late August
+        ((51, 2), 3),  # September activity
+    ]
+
+    boxes = {}
+    for coord, lvl in actual_days + extra_days:
+        boxes[coord] = lvl
+    return boxes
+
+def generate_svg(is_dark=True, duration_ms=7000):
     path = build_snake_circuit()
     N = len(path)
     snake_len = 5
     
-    # Select food cells along path (eaten in sequence)
-    food_indices = []
-    eaten_cells = set()
-    for idx in range(3, N, 6):
-        coord = path[idx]
-        if coord not in eaten_cells:
-            food_indices.append((idx, coord))
-            eaten_cells.add(coord)
-            
-    # Deterministic pseudo-random seed for natural contribution pattern
-    rng = random.Random(42)
+    boxes = get_calibrated_boxes()
     
-    # Populate the rest of the board with lush green boxes (levels 1..4)
-    # Total cells: 53 * 7 = 371
+    # Identify which boxes lie on the snake's path (these get eaten in sequence)
+    food_indices = []
     grid_cells = {}
-    for col in range(53):
-        for row in range(7):
-            coord = (col, row)
-            if coord in eaten_cells:
-                continue
-            # Realistic commit activity pattern:
-            # More active in recent weeks (col 30..52), steady streaks throughout
-            prob = 0.32
-            if col > 35:
-                prob = 0.58
-            elif col % 4 == 0 or col % 5 == 0:
-                prob = 0.44
-            elif row in [1, 2, 3, 4]:
-                prob = 0.40
-                
-            if rng.random() < prob:
-                weights = [0.38, 0.32, 0.20, 0.10]
-                lvl = rng.choices([1, 2, 3, 4], weights=weights)[0]
-                grid_cells[coord] = lvl
+    for coord, lvl in boxes.items():
+        if coord in path:
+            idx = path.index(coord)
+            food_indices.append((idx, coord, lvl))
+        else:
+            grid_cells[coord] = lvl
+
+    # Sort food by the step at which snake reaches them
+    food_indices.sort(key=lambda x: x[0])
 
     # Theme colors
     if is_dark:
@@ -133,10 +152,9 @@ def generate_svg(is_dark=True, duration_ms=7200):
         f".s0{{animation-name:s0;}}",
     ]
 
-    # Food keyframes (smooth disappearance when eaten)
-    for i, (step_idx, coord) in enumerate(food_indices):
+    # Food keyframes (disappears into empty cell upon being eaten)
+    for i, (step_idx, coord, lvl) in enumerate(food_indices):
         eat_pct = round((step_idx / N) * 100, 2)
-        lvl = rng.choice([2, 3, 4])
         css.append(f".c.food{i}{{fill:var(--c{lvl});animation:none {duration_ms}ms linear infinite;animation-name:food{i};}}")
         css.append(f"@keyframes food{i}{{{{0%,{max(0, eat_pct - 0.05):.2f}%{{fill:var(--c{lvl});}}{eat_pct:.2f}%,100%{{fill:var(--ce);}}}}}}")
 
@@ -166,7 +184,7 @@ def generate_svg(is_dark=True, duration_ms=7200):
     ]
 
     # Render all 371 cells (53 cols x 7 rows)
-    food_map = {coord: i for i, (step_idx, coord) in enumerate(food_indices)}
+    food_map = {coord: i for i, (step_idx, coord, lvl) in enumerate(food_indices)}
     for col in range(53):
         for row in range(7):
             coord = (col, row)
@@ -205,17 +223,45 @@ def generate_svg(is_dark=True, duration_ms=7200):
 
     return "".join(svg_parts)
 
-if __name__ == "__main__":
-    # Duration of 7200ms for 216 steps = ~33ms per step (Fast and smooth arcade speed!)
-    dark_svg = generate_svg(is_dark=True, duration_ms=7200)
-    light_svg = generate_svg(is_dark=False, duration_ms=7200)
+def update_streak_svg(dist_dir="dist"):
+    """
+    Safely fetches the streak stats SVG without ever overwriting with an error SVG.
+    """
+    url = "https://github-readme-streak-stats.herokuapp.com/?user=Harsh007engineering&theme=tokyonight&hide_border=true&background=0d1117&ring=38bdf8&fire=38bdf8&currStreakLabel=38bdf8&sideNums=38bdf8&sideLabels=38bdf8"
+    target_path = os.path.join(dist_dir, "streak-stats.svg")
+    
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        content = urllib.request.urlopen(req, timeout=10).read().decode("utf-8")
+        if "Failed to retrieve" not in content and "Total Contributions" in content and len(content) > 2000:
+            with open(target_path, "w", encoding="utf-8") as f:
+                f.write(content)
+            print("Successfully refreshed streak-stats.svg from Heroku!")
+            return
+        else:
+            print("Warning: Heroku returned error or rate-limited SVG. Keeping existing valid SVG.")
+    except Exception as e:
+        print(f"Warning: Could not fetch from Heroku ({e}). Keeping existing valid SVG.")
 
+    # Fallback to local clean copy if available
+    if os.path.exists("streak-stats.svg") and not os.path.exists(target_path):
+        shutil.copy("streak-stats.svg", target_path)
+
+if __name__ == "__main__":
     os.makedirs("dist", exist_ok=True)
+    
+    dark_svg = generate_svg(is_dark=True, duration_ms=7000)
+    light_svg = generate_svg(is_dark=False, duration_ms=7000)
+
     with open("dist/github-snake-dark.svg", "w", encoding="utf-8") as f:
         f.write(dark_svg)
     with open("dist/github-snake.svg", "w", encoding="utf-8") as f:
         f.write(light_svg)
 
-    print(f"Generated SVGs successfully:")
-    print(f"  Dark SVG: {len(dark_svg)} bytes")
-    print(f"  Light SVG: {len(light_svg)} bytes")
+    update_streak_svg("dist")
+
+    print("Generation complete:")
+    print(f"  Dark Snake SVG: {len(dark_svg)} bytes (18 green boxes = 1.5x actual)")
+    print(f"  Light Snake SVG: {len(light_svg)} bytes")
+    if os.path.exists("dist/streak-stats.svg"):
+        print(f"  Streak SVG size: {os.path.getsize('dist/streak-stats.svg')} bytes")
