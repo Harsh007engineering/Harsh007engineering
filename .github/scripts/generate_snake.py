@@ -223,29 +223,45 @@ def generate_svg(is_dark=True, duration_ms=7000):
 
     return "".join(svg_parts)
 
+def update_contributions_num(svg_content, min_val=145):
+    pattern = r'(<!-- Total Contributions big number -->.*?<text[^>]*>\s*)(\d+)(\s*</text>)'
+    m = re.search(pattern, svg_content, re.DOTALL)
+    if m:
+        current_val = int(m.group(2))
+        new_val = max(current_val, min_val)
+        return re.sub(pattern, rf'\g<1>{new_val}\g<3>', svg_content, flags=re.DOTALL)
+    return svg_content
+
 def update_streak_svg(dist_dir="dist"):
     """
-    Safely fetches the streak stats SVG without ever overwriting with an error SVG.
+    Safely fetches the streak stats SVG without ever overwriting with an error SVG,
+    and ensures the total contributions reflect at least 145.
     """
     url = "https://github-readme-streak-stats.herokuapp.com/?user=Harsh007engineering&theme=tokyonight&hide_border=true&background=0d1117&ring=38bdf8&fire=38bdf8&currStreakLabel=38bdf8&sideNums=38bdf8&sideLabels=38bdf8"
     target_path = os.path.join(dist_dir, "streak-stats.svg")
     
+    content = None
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        content = urllib.request.urlopen(req, timeout=10).read().decode("utf-8")
-        if "Failed to retrieve" not in content and "Total Contributions" in content and len(content) > 2000:
-            with open(target_path, "w", encoding="utf-8") as f:
-                f.write(content)
+        resp = urllib.request.urlopen(req, timeout=10).read().decode("utf-8")
+        if "Failed to retrieve" not in resp and "Total Contributions" in resp and len(resp) > 2000:
+            content = resp
             print("Successfully refreshed streak-stats.svg from Heroku!")
-            return
         else:
             print("Warning: Heroku returned error or rate-limited SVG. Keeping existing valid SVG.")
     except Exception as e:
         print(f"Warning: Could not fetch from Heroku ({e}). Keeping existing valid SVG.")
 
-    # Fallback to local clean copy if available
-    if os.path.exists("streak-stats.svg") and not os.path.exists(target_path):
-        shutil.copy("streak-stats.svg", target_path)
+    if not content and os.path.exists("streak-stats.svg"):
+        with open("streak-stats.svg", "r", encoding="utf-8") as f:
+            content = f.read()
+
+    if content:
+        content = update_contributions_num(content, min_val=145)
+        with open(target_path, "w", encoding="utf-8") as f:
+            f.write(content)
+        with open("streak-stats.svg", "w", encoding="utf-8") as f:
+            f.write(content)
 
 if __name__ == "__main__":
     os.makedirs("dist", exist_ok=True)
