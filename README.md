@@ -41,18 +41,6 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
 
 ---
 
-### 📊 GitHub Streak
-
-<div align="center">
-
-<a href="https://github.com/Harsh007engineering">
-  <img src="https://raw.githubusercontent.com/Harsh007engineering/Harsh007engineering/output/streak-stats.svg?v=20260919-145" alt="GitHub Streak" height="170" />
-</a>
-
-</div>
-
----
-
 ### 🚀 Featured Projects
 
 <table>
