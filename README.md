@@ -61,6 +61,10 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
       <a href="https://github.com/Harsh007engineering/CloudVault">
         <img src="https://img.shields.io/badge/📁%20View%20Repo-1e293b?style=for-the-badge" alt="View Repo" />
       </a>
+      &nbsp;
+      <a href="https://cloud-vault-file-storage.vercel.app/">
+        <img src="https://img.shields.io/badge/🌐%20Live%20Demo-0EA5E9?style=for-the-badge" alt="Live Demo" />
+      </a>
     </td>
     <!-- PROJECT 2: NEURO-FUZZY SCREENING -->
     <td width="50%" valign="top">
