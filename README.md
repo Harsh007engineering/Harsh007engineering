@@ -81,7 +81,7 @@ I'm a **Computer Science Engineering undergrad at VIT-AP (CGPA: 8.35/10)** passi
         <img src="https://img.shields.io/badge/📁%20View%20Repo-1e293b?style=for-the-badge" alt="View Repo" />
       </a>
       &nbsp;
-      <a href="https://depression-anxiety-screening.up.railway.app/">
+      <a href="https://neurofuzzy-screening.vercel.app/">
         <img src="https://img.shields.io/badge/🌐%20Live%20Demo-0EA5E9?style=for-the-badge" alt="Live Demo" />
       </a>
     </td>
